@@ -4,15 +4,18 @@ import matplotlib.pyplot as plt
 from matplotlib.dates import DateFormatter
 import pickle
 class Tracker:
-    def __init__(self, cur=None, goal=None, fileName='weight.csv', rate=None):
+    def __init__(self, cur=None, goal=None, rate=None):
         self.cur = cur
         self.goal = goal
-        self.record = pd.read_csv(fileName)
+        self.record = None
         self.rate = rate
-        self.recordFileName = fileName
+        self.recordFileName = 'weight.csv'
 
     def saveRecord(self):
         self.record.to_csv(self.recordFileName)
+    
+    def loadRecord(self):
+        self.record = pd.read_csv(self.recordFileName)
 
     def set_goal(self, goal):
         self.goal = goal

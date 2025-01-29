@@ -6,9 +6,11 @@ def track_weight():
     try:
         with open(tracker_file_path, 'x') as file:
             tracker = Tracker()
+            tracker.loadRecord()
     except FileExistsError:
             with open(tracker_file_path, "rb") as f:
                 tracker = pickle.load(f)
+                tracker.loadRecord()
 
     greeting()
     while True:
