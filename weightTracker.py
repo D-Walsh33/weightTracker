@@ -1,6 +1,6 @@
 from tracker import Tracker
 import pickle
-
+#this is a comment :D
 def track_weight():
     """Tracks weight over time and provides a visualization of your progress."""
     try:
