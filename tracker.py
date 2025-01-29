@@ -15,7 +15,7 @@ class Tracker:
         self.record.to_csv(self.recordFileName)
     
     def loadRecord(self):
-        self.record = pd.read_csv(self.recordFileName)
+        self.record = pd.read_csv(self.recordFileName, index_col=[0])
 
     def set_goal(self, goal):
         self.goal = goal
