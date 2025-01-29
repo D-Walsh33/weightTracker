@@ -1,3 +1,3 @@
 Handle date format with pandas?
 compare the goals and rate. give an estimation for their completion date!
-Refactore the commands / make a gui?
+Refactore the commands / make a gui? make the output prettier red and green colors for successful weigh ins 
