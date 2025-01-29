@@ -1,0 +1,5 @@
+refactor into a new class?
+Handle date format with pandas?
+allow user to set a goal weight and goal rate
+compare the goals and rate. give an estimation for their completion date!
+Refactore the commands / make a gui?
