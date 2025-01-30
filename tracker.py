@@ -60,7 +60,7 @@ class Tracker:
         if self.rate:
             print(f'Your goal rate of weight loss is {self.rate} kgs a week.')
 
-    def add_record(self, record):
+    def add_record(self):
         today = date.today()
         try:
             weight = float(input("Please enter today's weight in kg:\n"))
